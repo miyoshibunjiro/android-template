@@ -4,5 +4,7 @@ update_configs:
     directory: "/"
     update_schedule: "daily"
     target_branch: "master"
-    default_reviewers: "RyuNen344"
-    default_assignees: "RyuNen344"
+    default_reviewers: 
+        - "RyuNen344"
+    default_assignees: 
+        - "RyuNen344"
