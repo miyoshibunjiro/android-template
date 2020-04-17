@@ -5,7 +5,7 @@ object Dep {
     object GradlePlugin {
 
         object Android {
-            private const val version = "3.6.1"
+            private const val version = "3.6.2"
             const val android = "com.android.tools.build:gradle:$version"
             const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${AndroidX.Navigation.version}"
         }
@@ -31,7 +31,7 @@ object Dep {
         const val appCompat = "androidx.appcompat:appcompat:1.1.0"
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:1.1.3"
         const val emoji = "androidx.emoji:emoji-appcompat:1.0.0"
-        const val design = "com.google.android.material:material:1.2.0-alpha04"
+        const val design = "com.google.android.material:material:1.2.0-alpha06"
         const val fragmentKtx = "androidx.fragment:fragment-ktx:1.2.4"
 
         object LiveData {
@@ -41,7 +41,7 @@ object Dep {
         }
 
         object Navigation {
-            const val version = "2.2.1"
+            const val version = "2.3.0-alpha05"
             const val runtimeKtx = "androidx.navigation:navigation-runtime-ktx:$version"
             const val fragmentKtx = "androidx.navigation:navigation-fragment-ktx:$version"
             const val uiKtx = "androidx.navigation:navigation-ui-ktx:$version"
@@ -49,13 +49,13 @@ object Dep {
     }
 
     object Kotlin {
-        const val version = "1.3.70"
+        const val version = "1.3.72"
 
         const val stdlibCommon = "org.jetbrains.kotlin:kotlin-stdlib-common:$version"
         const val stdlibJvm = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$version"
 
         object Coroutines {
-            const val version = "1.3.4"
+            const val version = "1.3.5"
             const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
             const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version"
         }
@@ -76,13 +76,13 @@ object Dep {
     }
 
     object OkHttp {
-        private const val version = "4.4.1"
+        private const val version = "4.5.0"
         const val client = "com.squareup.okhttp3:okhttp:$version"
         const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:$version"
     }
 
     object Groupie {
-        private const val version = "2.7.2"
+        private const val version = "2.8.0"
         const val groupie = "com.xwray:groupie:$version"
         const val databinding = "com.xwray:groupie-databinding:$version"
     }
@@ -106,7 +106,7 @@ object Dep {
     }
 
     object Insetter {
-        const val insetter = "dev.chrisbanes:insetter-ktx:0.2.0"
+        const val insetter = "dev.chrisbanes:insetter-ktx:0.2.1"
     }
 
 }
