@@ -7,6 +7,7 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlinx-serialization'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'com.releaseshub.gradle.plugin'
 }
 
 apply from: rootProject.file('gradle/android.gradle')
@@ -57,4 +58,15 @@ dependencies {
 
     implementation Dep.Test.junit
     implementation Dep.Test.androidJunit4Ktx
+}
+
+releasesHub {
+    dependenciesBasePath = "buildSrc/src/main/java/dependencies/"
+    dependenciesClassNames = ["Dep.kt"]
+    pullRequestEnabled = true
+    gitHubRepositoryOwner = "RyuNen344"
+    gitHubRepositoryName = "android-template"
+    pullRequestsMax = 2
+    gitHubUserName = "RyuNen344"
+    gitHubUserEmail = "s1100633@outlook.com"
 }

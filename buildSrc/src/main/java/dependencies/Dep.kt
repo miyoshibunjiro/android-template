@@ -7,18 +7,20 @@ object Dep {
         object Android {
             private const val version = "3.6.1"
             const val android = "com.android.tools.build:gradle:$version"
-            val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${AndroidX.Navigation.version}"
+            const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${AndroidX.Navigation.version}"
         }
 
-        val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Kotlin.version}"
-        val kotlinSerialization = "org.jetbrains.kotlin:kotlin-serialization:${Kotlin.version}"
+        const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Kotlin.version}"
+        const val kotlinSerialization = "org.jetbrains.kotlin:kotlin-serialization:${Kotlin.version}"
+
+        const val releaseHub = "com.releaseshub:releases-hub-gradle-plugin:1.4.2"
     }
 
     object Test {
         const val junit = "junit:junit:4.13"
         const val androidJunit4Ktx = "androidx.test.ext:junit-ktx:1.1.1"
         const val espressoCore = "androidx.test.espresso:espresso-core:3.2.0"
-        val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Kotlin.Coroutines.version}"
+        const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Kotlin.Coroutines.version}"
         const val kotlinTestAssertions = "io.kotlintest:kotlintest-assertions:3.1.10"
         const val testingKtx = "androidx.navigation:navigation-testing:2.3.0-alpha03"
     }
@@ -33,7 +35,7 @@ object Dep {
         const val fragmentKtx = "androidx.fragment:fragment-ktx:1.2.0"
 
         object LiveData {
-            const val version = "2.2.0"
+            private const val version = "2.2.0"
             const val liveDataCoreKtx = "androidx.lifecycle:lifecycle-livedata-core-ktx:$version"
             const val liveDataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:$version"
         }
@@ -59,14 +61,14 @@ object Dep {
         }
 
         object Serialization {
-            const val version = "0.20.0"
+            private const val version = "0.20.0"
 
             const val serializationAndroid = "org.jetbrains.kotlinx:kotlinx-serialization-runtime:$version"
         }
     }
 
     object Ktor {
-        const val version = "1.3.1"
+        private const val version = "1.3.1"
         const val clientCore = "io.ktor:ktor-client-core:$version"
         const val clientAndroid = "io.ktor:ktor-client-okhttp:$version"
         const val json = "io.ktor:ktor-client-json-jvm:$version"
