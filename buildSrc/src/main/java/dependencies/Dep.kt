@@ -32,7 +32,7 @@ object Dep {
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:1.1.3"
         const val emoji = "androidx.emoji:emoji-appcompat:1.0.0"
         const val design = "com.google.android.material:material:1.2.0-alpha04"
-        const val fragmentKtx = "androidx.fragment:fragment-ktx:1.2.0"
+        const val fragmentKtx = "androidx.fragment:fragment-ktx:1.2.4"
 
         object LiveData {
             private const val version = "2.2.0"
