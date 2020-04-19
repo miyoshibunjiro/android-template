@@ -36,7 +36,7 @@ object Dep {
 
         object LiveData {
             private const val version = "2.2.0"
-            const val liveDataCoreKtx = "androidx.lifecycle:lifecycle-livedata-core-ktx:$version"
+            const val liveDataCoreKtx = "androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0"
             const val liveDataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:$version"
         }
 
