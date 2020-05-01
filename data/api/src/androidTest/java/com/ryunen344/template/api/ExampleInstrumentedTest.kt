@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.ryunen344.template.mmlicensetoolsplugindemo.api.test", appContext.packageName)
+        assertEquals("com.ryunen344.template.api.test", appContext.packageName)
     }
 }
