@@ -105,7 +105,6 @@ object Dep {
     }
 
     object Klock {
-        private const val version = "1.9.1"
         const val common = "com.soywiz.korlibs.klock:klock:1.11.0"
     }
 
