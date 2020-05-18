@@ -5,7 +5,6 @@ object Dep {
     object GradlePlugin {
 
         object Android {
-            private const val version = "3.6.2"
             const val android = "com.android.tools.build:gradle:3.6.3"
             const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.0-alpha06"
         }
