@@ -104,7 +104,7 @@ object Dep {
     }
 
     object Klock {
-        const val common = "com.soywiz.korlibs.klock:klock:1.11.0"
+        const val common = "com.soywiz.korlibs.klock:klock:1.11.3"
     }
 
     object Timber {
