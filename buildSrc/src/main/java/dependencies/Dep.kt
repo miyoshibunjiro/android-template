@@ -30,7 +30,7 @@ object Dep {
 
     object AndroidX {
 
-        const val coreKtx = "androidx.core:core-ktx:1.3.0-rc01"
+        const val coreKtx = "androidx.core:core-ktx:1.3.0"
         const val appCompat = "androidx.appcompat:appcompat:1.2.0-beta01"
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
         const val emoji = "androidx.emoji:emoji-appcompat:1.0.0"
