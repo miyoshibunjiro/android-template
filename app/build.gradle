@@ -56,8 +56,13 @@ dependencies {
     implementation Dep.Kotlin.Coroutines.coroutines
     implementation Dep.Kotlin.Coroutines.coroutinesAndroid
 
-    implementation Dep.Test.junit
-    implementation Dep.Test.androidJunit4Ktx
+    implementation Dep.Koin.android
+    implementation Dep.Koin.scope
+    implementation Dep.Koin.viewmodel
+    implementation Dep.Koin.fragment
+
+    testImplementation Dep.Test.junit
+    testImplementation Dep.Test.androidJunit4Ktx
 }
 
 releasesHub {

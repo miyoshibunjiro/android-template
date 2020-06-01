@@ -5,15 +5,14 @@ object Dep {
     object GradlePlugin {
 
         object Android {
-            private const val version = "3.6.2"
-            const val android = "com.android.tools.build:gradle:$version"
-            const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${AndroidX.Navigation.version}"
+            const val android = "com.android.tools.build:gradle:4.0.0"
+            const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.0-alpha06"
         }
 
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Kotlin.version}"
         const val kotlinSerialization = "org.jetbrains.kotlin:kotlin-serialization:${Kotlin.version}"
 
-        const val releaseHub = "com.releaseshub:releases-hub-gradle-plugin:1.4.2"
+        const val releaseHub = "com.releaseshub:releases-hub-gradle-plugin:1.5.1"
     }
 
     object Test {
@@ -22,29 +21,33 @@ object Dep {
         const val espressoCore = "androidx.test.espresso:espresso-core:3.2.0"
         const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Kotlin.Coroutines.version}"
         const val kotlinTestAssertions = "io.kotlintest:kotlintest-assertions:3.1.10"
-        const val testingKtx = "androidx.navigation:navigation-testing:2.3.0-alpha03"
+        const val testingKtx = "androidx.navigation:navigation-testing:2.3.0-alpha06"
+
+        object MockK {
+            const val jvm = "io.mockk:mockk:1.10.0"
+        }
     }
 
     object AndroidX {
 
-        const val coreKtx = "androidx.core:core-ktx:1.2.0"
-        const val appCompat = "androidx.appcompat:appcompat:1.1.0"
-        const val constraintLayout = "androidx.constraintlayout:constraintlayout:1.1.3"
+        const val coreKtx = "androidx.core:core-ktx:1.3.0"
+        const val appCompat = "androidx.appcompat:appcompat:1.2.0-beta01"
+        const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
         const val emoji = "androidx.emoji:emoji-appcompat:1.0.0"
         const val design = "com.google.android.material:material:1.2.0-alpha06"
-        const val fragmentKtx = "androidx.fragment:fragment-ktx:1.2.4"
+        const val fragmentKtx = "androidx.fragment:fragment-ktx:1.3.0-alpha04"
+        const val recyclerView = "androidx.recyclerview:recyclerview:1.1.0"
+        const val recyclerViewSelection = "androidx.recyclerview:recyclerview-selection:1.1.0-rc01"
 
         object LiveData {
-            private const val version = "2.2.0"
-            const val liveDataCoreKtx = "androidx.lifecycle:lifecycle-livedata-core-ktx:$version"
-            const val liveDataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:$version"
+            const val liveDataCoreKtx = "androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0-alpha02"
+            const val liveDataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-alpha02"
         }
 
         object Navigation {
-            const val version = "2.3.0-alpha05"
-            const val runtimeKtx = "androidx.navigation:navigation-runtime-ktx:$version"
-            const val fragmentKtx = "androidx.navigation:navigation-fragment-ktx:$version"
-            const val uiKtx = "androidx.navigation:navigation-ui-ktx:$version"
+            const val runtimeKtx = "androidx.navigation:navigation-runtime-ktx:2.3.0-alpha06"
+            const val fragmentKtx = "androidx.navigation:navigation-fragment-ktx:2.3.0-alpha06"
+            const val uiKtx = "androidx.navigation:navigation-ui-ktx:2.3.0-alpha06"
         }
     }
 
@@ -67,6 +70,14 @@ object Dep {
         }
     }
 
+    object Koin {
+        private const val version = "2.1.5"
+        const val android = "org.koin:koin-android:$version"
+        const val scope = "org.koin:koin-androidx-scope:$version"
+        const val viewmodel = "org.koin:koin-androidx-viewmodel:$version"
+        const val fragment = "org.koin:koin-androidx-fragment:$version"
+    }
+
     object Ktor {
         private const val version = "1.3.1"
         const val clientCore = "io.ktor:ktor-client-core:$version"
@@ -76,7 +87,7 @@ object Dep {
     }
 
     object OkHttp {
-        private const val version = "4.5.0"
+        private const val version = "4.6.0"
         const val client = "com.squareup.okhttp3:okhttp:$version"
         const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:$version"
     }
@@ -84,21 +95,16 @@ object Dep {
     object Groupie {
         private const val version = "2.8.0"
         const val groupie = "com.xwray:groupie:$version"
-        const val databinding = "com.xwray:groupie-databinding:$version"
+        const val viewbinding = "com.xwray:groupie-viewbinding:$version"
     }
 
     object Coil {
-        private const val version = "0.9.5"
+        private const val version = "0.10.1"
         const val coil = "io.coil-kt:coil:$version"
     }
 
     object Klock {
-        private const val version = "1.9.1"
-        const val common = "com.soywiz.korlibs.klock:klock:$version"
-    }
-
-    object MockK {
-        const val jvm = "io.mockk:mockk:1.9.3"
+        const val common = "com.soywiz.korlibs.klock:klock:1.11.3"
     }
 
     object Timber {
@@ -108,5 +114,4 @@ object Dep {
     object Insetter {
         const val insetter = "dev.chrisbanes:insetter-ktx:0.2.1"
     }
-
 }
